@@ -7,7 +7,7 @@ const happyCatGif = "images/cute_cat_really.gif"
 const catGifs = ["images/cute_cat_asking.gif", "images/cute_cat_begging.gif", "images/cute_cat_please.gif", "images/cute_cat_areyousure.gif", "images/cute_cat_say_yes!!!.gif", "images/DiCarpio.gif" ]
 
 let dateName;
-dateName = prompt("What is your date name?")
+dateName = prompt("What is your name?")
 
 const buttonMessages = ["Are you sure??" + dateName, dateName + " please!", dateName + " PLEASE! PLEASE!","Sure, sure sure??? " + dateName, "You can't do this to me!" + dateName, "Hehehe"];
 
