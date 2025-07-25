@@ -2,62 +2,64 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-style: italic;
-    
 }
 
 .container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f0f0f0;
     flex-direction: column;
     background: linear-gradient(to bottom right, #fff, #e7a8b2);
+    padding: 2vw;
 }
 
-.buttons{
+.buttons {
     display: flex;
-    gap: 10px;
+    gap: 2vw;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-h2{
+
+h2 {
     font-size: 3.5em;
     color: #555;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
+    text-align: center;
 }
 
-h1{
+h1 {
     font-size: 2em;
     color: #333;
-    margin-top: 10px;
+    margin-top: 1vh;
+    text-align: center;
 }
-.yes {
-    background-color: green;
-    padding: 10px 20px;
+
+.yes, .no {
+    padding: 1em 2em;
     font-size: 1.2em;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     color: white;
     transition: background-color 0.3s ease;
-    margin-top: 10px;
-    width: 200px;
-    height: 70px;
+    margin-top: 1vh;
+    width: 40vw;
+    max-width: 200px;
+    height: 10vh;
+    max-height: 70px;
+    min-width: 120px;
+    min-height: 40px;
+}
+
+.yes {
+    background-color: green;
 }
 .no {
     background-color: red;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    color: white;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-    width: 200px;
-    height: 70px;
 }
 
 .yes:hover {
@@ -68,18 +70,66 @@ h1{
 }
 
 #asking-cat {
-    width: 800px;
+    width: 80vw;
+    max-width: 800px;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 1vh;
     border-radius: 15px;
 }
 
 .before-btn {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    padding: 1em 2em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.2em;
+    margin-top: 1vh;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    h2 {
+        font-size: 2.5em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    #asking-cat {
+        width: 95vw;
+        max-width: 500px;
+    }
+    .yes, .no {
+        width: 60vw;
+        max-width: 160px;
+        height: 8vh;
+        max-height: 55px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 4vw;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h1 {
+        font-size: 1em;
+    }
+    #asking-cat {
+        width: 100vw;
+        max-width: 300px;
+    }
+    .yes, .no {
+        width: 80vw;
+        max-width: 120px;
+        height: 7vh;
+        max-height: 45px;
+        font-size: 1em;
+    }
+    .buttons {
+        gap: 4vw;
+    }
 }
