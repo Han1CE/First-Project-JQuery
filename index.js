@@ -47,8 +47,9 @@ $(".no").on("click", function(){
 
 
 $(".yes").on("click", function(){
+    $("h2").text("Thank you so much! Let's go!")
     $("img").attr("src", happyCatGif)
-    $("h1").text("Really?! Yayyy finally! ~~~ !").css("color", "red")
+    $("h1").text("OMFG?! Yayyy finally! ~~~ !").css("color", "red")
     $("button").remove()
 });
 
