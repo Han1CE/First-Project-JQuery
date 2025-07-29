@@ -87,6 +87,13 @@ h1 {
     font-size: 1.2em;
     margin-top: 1vh;
 }
+.message-me {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 1vh;
+    text-align: center;
+    display: block;
+}
 
 /* Responsive adjustments */
 @media (max-width: 900px) {

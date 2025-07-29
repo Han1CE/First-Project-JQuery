@@ -50,6 +50,7 @@ $(".yes").on("click", function(){
     $("h2").text("Thank you so much! Let's go!")
     $("img").attr("src", happyCatGif)
     $("h1").text("OMFG?! Yayyy finally! ~~~ !").css("color", "red")
+    $("<div class='message-me'>Message me hihi</div>").insertAfter("h1");
     $("button").remove()
 });
 
